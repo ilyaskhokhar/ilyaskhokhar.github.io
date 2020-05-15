@@ -1,52 +1,205 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Blog</title>
-    
-    <style>
-        h2 {
-            font-size:1.5em;
-            color:red;
-            background-color:yellow;
-            font-family:monospace;
-            font-style:italic;
-            font-weight:bold;
-            
-        }
-        
-         h3 {
-            font-size:1.5em;
-            color:blue;
-        }
-        
-        h5 {
-            font-size:1.5em;
-            color:red;
-        }
-        
-    </style>
-    
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
     </head>
-    <body>
-        
-        <h1>Ilyas' blog</h1>
+  <style>
+      {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body
+{
+  font-family:sans-serif;
+ }
 
-        <h2> Contents </h2>
-        <ul>
-            <li><a href="#1st">First post!</a></li>
-            <li><a href="#2nd">Second post!</a></li>
-        </ul>
-        
-        <h3 id="1st">First post</h3>
-        <h4>Posted on some date in some year</h4>
-        
-        <p>Something excited happened.</p>
-        
-        <h5 id="2nd">Second post</h5>
-        <h6>Posted on some date in some year</h6>
-        
-        <p>Something excited happened.</p>
+.name {
+  font-size:30px;
+  color:white;
+  background-color: #A9A9A9;
+  padding:20px;
+  width:21%;
+  margin-top:1%;
+   }
+
+.Contents {
+  font-size:20px;
+  display:inline-block;
+  width:15%;
+  padding:20px 10px;
+  text-align:left;
+  padding-top:30px;
+}
+#cont {
+  font-size:20px;
+  display:inline-block;
+  position:relative;
+  right:-305%;
+  border-style: solid;
+  color: blue;
+  padding:20px;
+  }
+
+.refimage {
+  background-image:url(http://via.placeholder.com/400x300);
+  margin-top:10px;
+  margin-bottom:10px;
+  width:1600px;
+  height:800px;
+}
+
+.ilyas-intro h2{
+  font-size:40px;
+  margin-top:50px;
+  margin-bottom:30px;
+}
+#about{
+  font-size:30px;
+}
+
+.contact-info h2{
+  font-size:65px;
+  margin-top:80px;
+  margin-bottom:40px;
+}
+.gmaillogo{
+   background-image:url(https://storage.googleapis.com/gweb-uniblog-publish-prod/images/logo_gmail_color_1x_web_512dp.max-500x500.png);
+  width:40px;
+  height:40px;
+}
+.email {
+  font-size:40px;
+  display:inline-block;
+  position:relative;
+  right:-12%;
+  border-style: solid;
+  color: blue;
+  padding:20px;
+  margin-top:30px;
+  margin-bottom:10px;
+  width:1000px;
+  text-align:center;
+     }
+.phonelogo{
+   background-image:url(https://pluspng.com/img-png/phone-call-png-hd-droid-razr-hd-iphone-computer-icons-telephone-call-phone-900.jpg);
+  width:40px;
+  height:40px;
+}
+.phone {
+  font-size:40px;
+  display:inline-block;
+  position:relative;
+  right:-12%;
+  border-style: solid;
+  color: black;
+  padding:20px;
+  margin-top:1px;
+  margin-bottom:10px;
+  width:1000px;
+  text-align:center;
+     }
+.linkedinlogo{
+   background-image:url(https://image.flaticon.com/icons/svg/174/174857.svg);
+  width:40px;
+  height:40px;
+}
+.social {
+  font-size:40px;
+  display:inline-block;
+  position:relative;
+  right:-12%;
+  border-style: solid;
+  color: black;
+  padding:20px;
+  margin-top:1px;
+  margin-bottom:10px;
+  width:1000px;
+  text-align:center;
+     }
+.gitlogo{
+   background-image:url(https://ctl.s6img.com/society6/img/y-xZ_syD7LhIJOGtpdTU08ra6Aw/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/8e29a2e79387449caa28090d71f489e3/~~/github-logo-prints.jpg?wait=0&attempt=0);
+  width:40px;
+  height:40px;
+}
+.git {
+  font-size:40px;
+  display:inline-block;
+  position:relative;
+  right:-12%;
+  border-style: solid;
+  color: black;
+  padding:20px;
+  margin-top:1px;
+  margin-bottom:10px;
+  width:1000px;
+  text-align:center;
+     }
+.houselogo{
+   background-image:url(https://www.logolynx.com/images/logolynx/18/18a247a6490bf08f9fd50972d810a91c.jpeg);
+  width:40px;
+  height:40px;
+  }
+.address{
+  font-size:30px;
+  display:inline-block;
+  position:relative;
+  right:-12%;
+  padding:50px;
+  width:1000px;
+  text-align:center;
+  margin-top:1px;
+  margin-bottom:10px;
+}
+
+#joke{
+  font-size:20px;
+  text-align:center;
+  padding:20px;
+}
+  
+    </style>
+  <body>
+     <header class="name">
+      MUHAMMAD ILYAS
+     </header>
+     <div class="Contents">
+       <p><a href="#intro">About</a></p>
+     </div>
+     <div class="Contents">
+       <p><a href="#intro">Cases</a></p>
+     </div>
+     <div class="Contents">
+       <p><a href="#intro">Work with me</a></p>
+     </div>
+    <div class="Contents">
+       <p id="cont"><a href="#linktocontact">contact</a></p>
+     </div>
+      
+    <!-- image -->
+    <div class="refimage">
+    <img src="http://via.placeholder.com/400x300" alt="dummy picture">
+    </div>
+    
+    <!-- intro -->
+    <div class="ilyas-intro">
+      <h2 id="intro">Small introduction</h2>
+      <p id="about">My name is Muhammad Ilyas. I have a degree in Engineering and I am keen to learn programming.</p>
+    </div>
+    
+    <!-- Contact info -->
+    <div class="contact-info">
+    <h2 id="linktocontact">Get in touch</h2>
+      <p class="email"><img class="gmaillogo" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/logo_gmail_color_1x_web_512dp.max-500x500.png" alt="Gmail"> ilyaskhokhar@gmail.com</p> <br>
+      <p class="phone"><img class="phonelogo" src="https://pluspng.com/img-png/phone-call-png-hd-droid-razr-hd-iphone-computer-icons-telephone-call-phone-900.jpg" alt="Phone"> +45 24906114</p> <br>
+      <p class="social"><img class="linkedinlogo" src="https://image.flaticon.com/icons/svg/174/174857.svg" alt="Linkedin"> LinkedIn</p>
+      <p class="git"><img class="gitlogo" src="https://ctl.s6img.com/society6/img/y-xZ_syD7LhIJOGtpdTU08ra6Aw/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/8e29a2e79387449caa28090d71f489e3/~~/github-logo-prints.jpg?wait=0&attempt=0" alt="GitHub"><a href="https://github.com/ilyaskhokhar/">GitHub</a></p>
+      <p class="address"><img class="houselogo" src="https://www.logolynx.com/images/logolynx/18/18a247a6490bf08f9fd50972d810a91c.jpeg" alt="house logo"> Mellemengen 9 st th 2980 Kokkedal Denmark</p>
+    </div>
+ <hr style="height:2px;border-width:0;color:blue;background-color:blue">    
+    <p id="joke">Please don't apply if you don't have the core concepts of Programming and you depend upon copying and pasting the code from StackOverflow/saved files :) </p>        
         
     </body>
 </html>
